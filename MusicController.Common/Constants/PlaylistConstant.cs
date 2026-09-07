@@ -1,6 +1,6 @@
 ﻿namespace MusicController.Common.Constants
 {
-    // Max lenght for the ef Fullent APi
+    // Max length for the ef Fluent API
     public static class PlaylistConstant
     {
         public const int MaxNameLength = 60;

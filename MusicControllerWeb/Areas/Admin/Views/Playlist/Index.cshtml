@@ -68,7 +68,7 @@
             }
         }
     </div>
-    @*    schudle list  *@
+    @*    schedule list  *@
     @if (Model.Any())
     {
         @await Component.InvokeAsync("WeeklyScheduleList", new { outletId = Model.FirstOrDefault().OutletId })

@@ -3,7 +3,7 @@ using System;
 
 namespace MusicController.Shared.ExpectionHelper
 {
-    // Override Expection
+    // Override Exception
     public class UserFriendlyException : Exception
     {
         public StatusApiEnum StatusCode { get; set; }

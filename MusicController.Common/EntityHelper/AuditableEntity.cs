@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MusicController.Common.EntityHelper
 {
-    // Common Prorperty for the ef Model and ViewModel or Dto ,Request Model
+    // Common Property for the ef Model and ViewModel or Dto ,Request Model
     public abstract class AuditableEntity : BaseId
     {
         [MaxLength(AuditableEntityConstant.MaxApplicationUserIdLength)]

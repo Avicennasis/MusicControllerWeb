@@ -3,12 +3,12 @@
         populatSchudle(scheduleValues);
     }
 });
-// todo: dailt no frequncy
+// todo: daily no frequency
 $("#schedule").change(function () {
     populatSchudle(this.value);
 });
 
-// populating the case of schudle
+// populating the case of schedule
 function populatSchudle(value) {
     switch (value) {
         case "AlternativeDay":

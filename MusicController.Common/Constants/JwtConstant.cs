@@ -1,6 +1,6 @@
 ﻿namespace MusicController.Common.Constants
 {
-    //jwt token expriryDay and scret key
+    //jwt token expiryDay and secret key
     public static class JwtConstant
     {
         public const double ExprieDays = 7;

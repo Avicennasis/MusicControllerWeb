@@ -1,6 +1,6 @@
 ﻿namespace MusicController.Common.HelperClasses
 {
-    // encrpy Using BCrypt Nuget Library
+    // encrypt Using BCrypt Nuget Library
     public static class PasswordHelper
     {
         public static string EncryptPassword(string password)

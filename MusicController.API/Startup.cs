@@ -47,9 +47,9 @@ namespace MusicController.API
                 app.UseDeveloperExceptionPage();
             }
             app.UseSerilogRequestLogging();
-            // Customized Authroized Response
+            // Customized Authorized Response
             app.CustomUnauthorized();
-            // Customized Expection
+            // Customized Exception
             app.UseApiExceptionHandler(logger);
             app.UseHttpsRedirection();
             app.CorsContainer();

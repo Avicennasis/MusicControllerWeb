@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace MusicController.Common.HelperClasses
 {
-    // Json HelperMethod For Web APi
+    // Json HelperMethod For Web API
     public class TimeSpanToStringConverter : JsonConverter<TimeSpan>
     {
         public override TimeSpan Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

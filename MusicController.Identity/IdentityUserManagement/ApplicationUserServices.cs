@@ -50,7 +50,7 @@ namespace MusicController.Identity.IdentityUserManagement
         {
             if (string.IsNullOrEmpty(userId))
             {
-                throw new Exception("Id Cannot be n null");
+                throw new Exception("Id Cannot be null");
             }
             var User = await GetById(userId);
             IdentityResult result = await _UserManager.DeleteAsync(User);

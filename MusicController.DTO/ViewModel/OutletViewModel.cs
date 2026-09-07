@@ -28,7 +28,7 @@ namespace MusicController.DTO.ViewModel
         public string Name { get; set; }
         [Display(Name = "Logo")]
         public string LogoUrl { get; set; }
-        [Display(Name = "Total Palylist")]
+        [Display(Name = "Total Playlist")]
         public int TotalPlaylists { get; set; }
         [Display(Name = "Total Devices")]
         public int TotalDevices { get; set; }

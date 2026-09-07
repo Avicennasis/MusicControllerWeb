@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicController.Shared.ExpectionHelper
 {
-    // customized response for APi in json Format and for other Status Type Error
+    // customized response for API in json Format and for other Status Type Error
     public static class CustomAuthorizeFilter
     {
         public static async Task CustomUnauthorized(this IApplicationBuilder app)

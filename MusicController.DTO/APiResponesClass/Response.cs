@@ -4,7 +4,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace MusicController.DTO.APiResponesClass
 {
-    // APi generic Response Class
+    // API generic Response Class
     public class Response<T>
     {
         [JsonPropertyName("message")]

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MusicController.Shared.Identity
 {
-    // Register Token in Web APi
+    // Register Token in Web API
     public static class JWTTokenHelper
     {
         public static void TokenContainer(this IServiceCollection services)

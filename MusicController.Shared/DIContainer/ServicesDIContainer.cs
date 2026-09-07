@@ -17,7 +17,7 @@ using MusicController.Shared.ExtensionMethod;
 
 namespace MusicController.Shared.DIContainer
 {
-    // Serivces Reigstraion for Web and APi 
+    // Services Registration for Web and API 
     public static class ServicesDIContainer
     {
         public static void ServicesContainer(this IServiceCollection services)

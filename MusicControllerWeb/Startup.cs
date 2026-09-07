@@ -29,7 +29,7 @@ namespace MusicControllerWeb
         public void ConfigureServices(IServiceCollection services)
         {
 
-            // DI containter for services ,databases and automapper
+            // DI container for services ,databases and automapper
             services.DBContainer(Configuration);
             services.RespositoryContainer();
             services.ServicesContainer();
@@ -68,7 +68,7 @@ namespace MusicControllerWeb
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                //todo: set Defualt route to the Admin outlets 
+                //todo: set Default route to the Admin outlets 
                 endpoints.MapControllerRoute(
             name: "areas",
             pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
