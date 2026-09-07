@@ -44,7 +44,7 @@ namespace MusicControllerWeb.Areas.Admin.Controllers
 
             if (trackView.StartTime >= trackView.EndTime)
             {
-                ModelState.AddModelError(string.Empty, "End time cannot be equal or less then start time");
+                ModelState.AddModelError(string.Empty, "End time cannot be equal or less than start time");
             }
             if (string.IsNullOrEmpty(trackView.TrackId) && (trackView.File != null || trackView.File.Length > 0))
             {
@@ -97,7 +97,7 @@ namespace MusicControllerWeb.Areas.Admin.Controllers
             var track = _mapper.Map<Track>(trackViewModel);
             if (track.StartTime >= track.EndTime)
             {
-                ModelState.AddModelError(string.Empty, "End time cannot be equal or less then start time");
+                ModelState.AddModelError(string.Empty, "End time cannot be equal or less than start time");
                 return View(trackViewModel);
             }
             if (ModelState.IsValid)

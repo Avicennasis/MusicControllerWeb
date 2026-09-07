@@ -111,7 +111,7 @@ namespace MusicController.Identity.Jwt
             }
             if (!refreshToken.IsActive)
             {
-                throw new Exception("Token expire");
+                throw new Exception("Token expired");
             }
 
             return refreshToken;

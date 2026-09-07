@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MusicControllerWeb.Areas.Admin.Controllers
 {
-    //todo: action level roles implementation remaining  Create and Manage = Admin , Schudle =Dj
+    //todo: action level roles implementation remaining  Create and Manage = Admin , Schedule =Dj
     [Area(UserRolesConstant.Admin)]
     [Authorize(Roles = UserRolesConstant.AdminorDJ)]
     public class OutletsController : Controller
@@ -50,7 +50,7 @@ namespace MusicControllerWeb.Areas.Admin.Controllers
             {
                 if (outletViewModel.File == null || outletViewModel.File.Length <= 0)
                 {
-                    ModelState.AddModelError("", "Outlet logo requried");
+                    ModelState.AddModelError("", "Outlet logo required");
                 }
                 if (ModelState.IsValid)
                 {
@@ -95,7 +95,7 @@ namespace MusicControllerWeb.Areas.Admin.Controllers
             }
             if (string.IsNullOrEmpty(outletViewModel.ImageUrl) && (outletViewModel.File == null || outletViewModel.File.Length <= 0))
             {
-                ModelState.AddModelError("", "Outlet logo requried");
+                ModelState.AddModelError("", "Outlet logo required");
             }
             if (ModelState.IsValid)
             {

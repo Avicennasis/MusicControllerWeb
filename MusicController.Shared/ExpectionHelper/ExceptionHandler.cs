@@ -13,7 +13,7 @@ using System.Text;
 
 namespace MusicController.Shared.ExpectionHelper
 {
-    // Customized Expection Handling for Web APi
+    // Customized Exception Handling for Web API
     public static class ExceptionHandler
     {
         public static void UseApiExceptionHandler(this IApplicationBuilder app, ILogger loggerFactory)

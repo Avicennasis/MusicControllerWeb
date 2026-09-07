@@ -122,7 +122,7 @@ namespace MusicController.BL.OutletServices
                 {
                     throw new UserFriendlyException($"Wrong Outlet selected, You are trying to log into {outlet.Name} but you are registered to {outletForName.Name}", StatusApiEnum.AlreadyAssignedDevice);
                 }
-                throw new UserFriendlyException("No device Register yet", StatusApiEnum.NotRegister);
+                throw new UserFriendlyException("No device registered yet", StatusApiEnum.NotRegister);
             }
             if (!outletwithDevice.IsApproved)
             {
